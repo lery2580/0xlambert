@@ -7,7 +7,7 @@ function HeaderWidget() {
     <div className="header">
       <div className="headerWidget">
         <h1>
-          <a href={config.preLink + "/"} title="0xLambert">
+          <a href={config.preLink + "/"} title="Soully">
             <img src={require("./img/logo.png")} alt="logo" />
           </a>
         </h1>

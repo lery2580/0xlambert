@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "index.ts",
   "private": true,
-  "homepage": "/0xlambert/",
+  "homepage": "./",
   "description": "An ERC-721/ERC-20 Securitizer",
   "scripts": {
     "start": "node scripts/start.js",
