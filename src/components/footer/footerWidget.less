@@ -1,0 +1,36 @@
+@import url("@/styles/theme.less");
+.footer {
+  height: 80px;
+  line-height: 80px;
+  clear: both;
+  overflow: hidden;
+  background-color: #1b1b1b;
+  .footerWidget {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.footerWidget {
+  p {
+    float: left;
+  }
+  .fr {
+    float: right;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 50px;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+      img {
+        display: block;
+        width: 22px;
+      }
+    }
+  }
+}

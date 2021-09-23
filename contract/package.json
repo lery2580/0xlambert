@@ -1,0 +1,36 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --network=rinkeby",
+    "flattenAll": "npm run flatten contracts/*.sol ",
+    "flatten": "node scripts/flattener.js --outputDir full",
+    "build": "npm run flattenAll && npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "@openzeppelin/contracts": "^4.3.1",
+    "@resolver-engine/imports-fs": "^0.3.3",
+    "@solidity-parser/parser": "^0.13.2",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "find-up": "4.1.0",
+    "fs": "0.0.1-security",
+    "mkdirp": "^1.0.4",
+    "tsort": "0.0.1"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.14"
+  }
+}

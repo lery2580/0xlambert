@@ -1,0 +1,81 @@
+@import url("@/styles/theme.less");
+
+@font-face {
+  font-family: erasbd;
+  src: url("./assets/fonts/erasbd.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-color: @bgColor01;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+
+.h30 {
+  height: 30px;
+  width: 100%;
+}
+.h100 {
+  height: 100px;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  body .homeContainer .partone .fr ul li {
+    width: 48%;
+    height: 48%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body .homeContainer .partone .fl,
+  body .homeContainer .partone .fr {
+    float: none;
+    width: 100%;
+  }
+  body .homeContainer .partone .fr ul li {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+  div.buttom ul li {
+    // display: block;
+    width: 48%;
+    margin-left: 0;
+  }
+  div.buttom ul li img {
+    width: 80%;
+    margin: 5px auto;
+  }
+}

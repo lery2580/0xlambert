@@ -1,0 +1,55 @@
+@import url("@/styles/theme.less");
+.header {
+  height: 80px;
+  line-height: 80px;
+  clear: both;
+  overflow: hidden;
+  .headerWidget {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 120px;
+    img {
+      display: block;
+      height: 40px;
+    }
+  }
+  h2 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 110px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 80px;
+  }
+  h3 {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.4;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 80px;
+  }
+  .fr {
+    float: right;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 50px;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+      img {
+        display: block;
+        width: 22px;
+      }
+    }
+  }
+}

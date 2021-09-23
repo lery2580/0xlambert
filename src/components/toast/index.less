@@ -1,0 +1,48 @@
+@import url("@/styles/theme.less");
+/**
+* animation
+*/
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+  @keyframes @name {
+    @content();
+  }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=moz) {
+  @-moz-keyframes @name {
+    @content();
+  }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=o) {
+  @-o-keyframes @name {
+    @content();
+  }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+  @-webkit-keyframes @name {
+    @content();
+  }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=all) {
+  .keyframes(moz,@name,@content);
+  .keyframes(o,@name,@content);
+  .keyframes(webkit,@name,@content);
+  .keyframes(def,@name,@content);
+}
+
+.toast {
+  display: inline-block;
+  background-color: @themeColor;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 40px;
+  right: 0;
+  transform-origin: center;
+  max-width: 280px;
+  animation: zoomIn 0.5s ease;
+  animation-fill-mode: forwards;
+  z-index: 100001; // toast提示，z-index应高于一切
+  word-break: break-all;
+}
