@@ -7,7 +7,7 @@ const HomeContainer = function () {
         <img className="logo" src={require("../assets/logo.png")} alt="logo" />
         <h2>Unique SOULLY</h2>
         <h4>
-          This collection is an exclusive collection in collaboration with
+          It's an exclusive series of NFTs in collaboration with SpiritSwap
         </h4>
       </div>
       <div className="buttom">
@@ -33,7 +33,7 @@ const HomeContainer = function () {
         <p>Total 20 NFTs. </p>
         <p>It will be available at https://artion.io when it launches. </p>
         <p>
-          This collection is an exclusive collection in collaboration with .
+          It's an exclusive series of NFTs in collaboration with SpiritSwap
         </p>
       </div>
     </>
